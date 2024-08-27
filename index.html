@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header class="encabezado">
+        <a href="">
+            <img class="logo" src="./img/logo.svg" alt="logo alura latam">
+        </a>
+    </header>
+
+    <main class="contenidomain">
+        <section class="seccionencriptador">
+            <textarea class="encriptadorTexto" placeholder="ingresa tu texto aquí"></textarea>
+            <div class="aviso">
+                <img src="./img/aviso.svg" alt="imagen aviso" class="imgaviso">
+                <p class="textoaviso">solo letas minusculas y sin acentos</p>
+            </div>
+            <!-- botones -->
+            <div class="botones">
+                <button type="submit" class="btnencriptar">encriptar</button>
+                <button type="submit" class="btndesencriptar">desencriptar</button>
+            </div>
+        </section>
+
+        <!--seccion dos para la targeta encriptada-->
+        <section class="targeta">
+                
+            <div class="contenedorTargeta">
+                <img class="imgmuñeco" src="./img/muñeco.svg" alt="dibujo tarjeta">
+                <p class="textoUno">ningun mensaje fue encontrado</p>
+                <p class="textoDos">ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="msgencriptado" readonly></textarea>
+            <button type="submit" class="btncopiar">copiar</button>
+            
+        </section>
+       <!--fin seccion dos-->
+    </main>
+       
+    <footer class="piedepg">
+        <p class="parrafodePie"> encriptador de texto - desarrollado por Neyser Rivas</p>
+    </footer>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
